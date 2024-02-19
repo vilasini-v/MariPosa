@@ -16,7 +16,7 @@ searchForm.addEventListener('submit', function(event) {
 
     // Simulated search results with content (replace with your actual search implementation)
     const results = [
-        { name: 'Cactus', content: 'Content of Result 1', img:"images/plant-2.jpg", text_span:"20 January, 2020" , text_h2: "The growing need of plants", text_p:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat."},
+        { name: 'Cactus', content: 'Content of Result 1', img:"images/plant-2.jpg", text_h2: "The growing need of plants", text_p:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat."},
         { name: 'Rose', content: 'Content of Result 2' },
         { name: 'Jasmine', content: 'Content of Result 3' }
     ];
@@ -36,7 +36,6 @@ searchForm.addEventListener('submit', function(event) {
               <span><i class = "far fa-heart"></i></span>
                 </div>
                 <div class = "blog-text">
-              <span>${result.text_span}</span>
               <h2>${result.text_h2}</h2>
               <p>${result.text_p}</p>
               <a href = "#">Read More</a>
