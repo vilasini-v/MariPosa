@@ -151,7 +151,7 @@ header{
     width: 300px;
     margin-left: 10%;
     display: grid;
-    place-items:  center;
+    place-items: center;
 }
 /* blog */
 .blog{
