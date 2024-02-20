@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="pg_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/logo.png">
 
   </head>
   <body>
 
     <!-- header -->
-    <header>
-      <nav class = "navbar">
-        <div class = "container1">
-          <!-- <a href = "index.html" class = "navbar-brand">MARIPOSA</a> -->
-          <a href="/" class="navbar-brand">MARI<span class="green">POSA</span></a>
-          <div class = "navbar-nav">
-            <a href = "">Home</a>
-            <a href = "">Plant Guide</a>
-            <a href = "">About Us</a>
-            <a href = "">Make an Order</a>
-          </div>
-        </div>
+    <header class="header">
+      <a class="logo">MARI<span class="green">POSA</span></a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#Services">Plant Guide</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="">Profile</a>
+        <a href="" class="btn">Make an Order</a>
+
       </nav>
+
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <img src="../landing_page/images/grid-outline.svg" alt="" />
+      </div>
+    </header>
+    
       <div class = "banner">
         <div class = "container2">
           <h1 class = "banner-title">
@@ -32,7 +39,7 @@
           </h1>
           <p>everything that you want to know about plants & their care</p>
           <form id="search-form">
-            <input type="text" id="search-input" class="search-input" placeholder="Type your plant">
+            <input type="text" id="search-input" class="search-input" placeholder="   Type your plant">
             <button type="submit" id="search-btn" class="search-btn">
                 <i class="fas fa-search"></i>
             </button>
@@ -42,7 +49,7 @@
           <img src="images/bg_img.png" class="bg_img"/>
         </div>
       </div>
-    </header>
+    
 
     <section class = "blog" id = "blog">
       <div class = "container2">

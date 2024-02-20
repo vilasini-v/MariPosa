@@ -2,20 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root{
-    --Playfair: 'Playfair Display', serif;
-    --Quicksand: 'Quicksand', sans-serif;
-    --Roboto: 'Roboto', sans-serif;
     --Ubuntu: 'Ubuntu', sans-serif;
     --dark: #3c393d;
     --exDark: #2b2b2b;
     --green: #8acbb8;
     --white:#fff;
+    --black: #1f1f1f;
+    --white: #fff;
+    --green: #8acbb8;
+    --deep-yellow: #3a5a40;
+    --bg-yellow: #fffaf1;
+    --btn-yellow: #fff4d4;
+    --footer-yellow: #fff9e9;
+    --grey: #737373;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s linear;
 
 }
 *{
     padding: 0;
     margin: 0;
     font-family: var(--Ubuntu);
+    
 }
 body{
     line-height: 1.4;
@@ -26,62 +34,69 @@ img{
     width: 100%;
     display: block;
 }
-.container1, .container2{
+.container2{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0rem 1rem;
-    font-size: 16px;
+    font-size: 62.5%;
     font-family: var(--Ubuntu);
 
 }
 
-.container1{
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
-}
 
-/* header */
-header{
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-bg.jpg) center/cover no-repeat fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-}
-.navbar{
-    background: #eee;
-    padding: 1.2rem;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
-
-}
-.navbar-brand{
-    color:var(--exDark);
-    font-size: 2rem;
-    display: block;
-    text-align: center;
+a {
     text-decoration: none;
-    font-family: var(--Ubuntu);
-    letter-spacing: 1px;
-}
-.navbar-nav{
-    padding: 0.8rem 0 0.2rem 0;
-    text-align: center;
-}
-.navbar-nav a{
-    font-family: var(--Ubuntu);
-    color:var(--exDark);
-    letter-spacing: 1px;
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.4rem 0.1rem;
-    letter-spacing: 3px;
-    transition: opacity 0.5s ease;
-}
-.navbar-nav a:hover{
-    opacity: 0.4;
-}
-.green {
+    color: inherit;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  section {
+    padding: 2rem 9%;
+  }
+  
+  .green {
     color: var(--green);
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    height: 8rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  
+  .navbar a {
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+
+  .navbar a:hover {
+    color: var(--green);
+    border-color: var(--green);
   }
 .banner{
     flex: 1;
@@ -94,20 +109,21 @@ header{
 }
 .banner-title{
     font-size: 3rem;
-    font-family: var(--Playfair);
+    font-family: var(--Ubuntu);
     line-height: 1.2;
 }
 .banner-title span{
-    font-family: var(--Playfair);
+    font-family: var(--Ubuntu);
     color: var(--exDark);
 }
 .banner p{
     padding: 1rem 0 2rem 0;
     font-size: 1.2rem;
     text-transform: capitalize;
-    font-family: var(--Roboto);
+    font-family: var(--Ubuntu);
     font-weight: 300;
     word-spacing: 2px;
+    margin-top: 100px;
 }
 .banner form{
     background: #fff;
@@ -117,8 +133,114 @@ header{
     justify-content: space-between;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    height: 8rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+  
+  .navbar a {
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .navbar a:hover {
+    color: var(--green);
+    border-color: var(--green);
+  }
+  
+  .btn {
+    display: inline-block;
+    color: var(--green);
+    background-color: var(--btn-green);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    box-shadow: var(--box-shadow);
+  }
+  
+  .header .hamburger img {
+    width: 3rem;
+  }
+  
+  .header .hamburger {
+    display: none;
+  }
+  
+  @media (max-width: 996px) {
+    .logo {
+      font-size: 3rem;
+    }
+  
+    .navbar a {
+      padding: 0.5rem;
+    }
+  
+    .navbar a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header .navbar {
+      position: fixed;
+      /* top: 9rem; */
+      left: 0;
+      right: 0;
+      width: 90%;
+      padding: 2.5rem;
+      margin: 0 auto;
+      box-shadow: var(--box-shadow);
+      background-color: var(--white);
+      text-align: center;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: 0.4s;
+      top: -100%;
+    }
+  
+    .header .navbar a:last-child {
+      display: none;
+    }
+  
+    .header .hamburger {
+      display: block;
+    }
+  
+    .navbar.show {
+      top: 9rem;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+  }
+
 .search-input{
-    font-family: var(--Roboto);
+    font-family: var(--Ubuntu);
     font-size: 1.1rem;
     width: 100%;
     outline: 0;
@@ -160,6 +282,8 @@ header{
 }
 .blog-content{
     margin: 2rem 0;
+    display:flex;
+    flex-direction: row;;
 }
 .blog-img{
     position: relative;
@@ -183,7 +307,7 @@ header{
     padding-bottom: 0.5rem;
 }
 .blog-text h2{
-    font-family: var(--Playfair);
+    font-family: var(--Ubuntu);
     padding: 1rem 0;
     font-size: 1.65rem;
     font-weight: 500;
@@ -195,7 +319,7 @@ header{
     padding-bottom: 1.2rem;
 }
 .blog-text a{
-    font-family: var(--Roboto);
+    font-family: var(--Ubuntu);
     font-size: 1.1rem;
     text-decoration: none;
     color: var(--dark);
@@ -256,12 +380,13 @@ footer{
 .footer span{
     margin-top: 1rem;
     display: block;
-    font-family: var(--Playfair);
+    font-family: var(--Ubuntu);
     letter-spacing: 2px;
 }
 
-/* Media Queries */
+/* Media Queries */ 
 @media screen and (min-width: 540px){
+    
     .navbar-nav a{
         padding-right: 1.2rem;
         padding-left: 1.2rem;
@@ -278,6 +403,9 @@ footer{
 }
 
 @media screen and (min-width: 768px){
+    .logo{
+        font-size: 20px;
+    }
     .navbar .container{
         display: flex;
         align-items: center;
@@ -286,17 +414,7 @@ footer{
     .search-input{
         padding: 0.8rem 0;
     }
-    .design-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .design-item{
-        margin: 0;
-    }
-
     .blog-content{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
@@ -314,8 +432,3 @@ footer{
     }
 }
 
-@media screen and (min-width: 1200px){
-    .design-content{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
