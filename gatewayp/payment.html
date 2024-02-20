@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment Gateway</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+	<header class="header">
+		<a href="/" class="logo">MARI<span class="green">POSA</span></a>
+  
+		<nav class="navbar">
+		  <a href="../landing_page/lp_index.html">Home</a>
+		  <a href="../plant_guide/pg_index.html">Plant Guide</a>
+		  <a href="../about_us/au_index.html">About Us</a>
+		  <a href="#contact">Contact Us</a>
+		  <a href="">Profile</a>
+		  <a href="../ecommerce/ec_index.html" class="btn">Make an Order</a>
+  
+		</nav>
+  
+		<!-- Hamburger -->
+		<div class="hamburger">
+		  <img src="../landing_page/images/grid-outline.svg" alt="" />
+		</div>
+	  </header>
+	  
+	<div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3> <br>
+			<form><p>
+				Full name <br>
+				<input type="text" class="input-boxes" name="" placeholder="Enter name"></p>
+				<p>Email <br>
+				<input type="text" class="input-boxes" name="" placeholder="Enter email"></p>
+				<p>Address <br>
+				<input type="textarea" class="input-boxes" name="" placeholder="Enter address"></p>
+				<p>City <br>
+				<input type="text" class="input-boxes" name="" placeholder="Enter City"></p>
+				<p> Zip code <br>
+				<input type="number"  class="input-boxes" name="" placeholder="Zip code"></p>		
+			</form>
+		</div>
+		<div class="right">
+			<h3>PAYMENT</h3>
+			<br>
+			<form>
+				<p>Accepted Cards <br>
+				<img src="image/card1.png" width="100">
+				<img src="image/card2.png" width="50"></p>
+				
+				<p>
+				Credit card number <br>
+			<input type="number" class="input-boxes" name="" placeholder="Enter card number"> </p>
+				<p>Expiry month <br>
+				<input type="number" class="input-boxes" name="" placeholder="month"><br></p>
+				
+					<p>Expiry year <br>
+					<input type="number" class="input-boxes" name="" placeholder="year"><br></p>
+					<p>CVV <br>
+						<input type="number" class="input-boxes" name="" placeholder="CVV"><br></p>
+						
+			</form>
+		</div>
+	</div>
+	<input type="submit"  class="submitButton" name="" value="Proceed to Checkout">
+
+	<script src="payment.js"></script>
+</body>
+
+</html>
