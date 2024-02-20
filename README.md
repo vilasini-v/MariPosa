@@ -22,7 +22,6 @@ Responsive: Accessible on all devices.
 
 ###Getting Started:
 
-Website URL: [Insert website URL here]
 Development environment: [HTML, CSS, NodeJS]
 
 Contributing:
