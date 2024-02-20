@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --black: #1f1f1f;
+  --white: #fff;
+  --green: #8acbb8;
+  --deep-yellow: #3a5a40;
+  --bg-yellow: #fffaf1;
+  --btn-yellow: #fff4d4;
+  --footer-yellow: #fff9e9;
+  --grey: #737373;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s linear;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.green {
+  color: var(--green);
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 7%;
+  height: 8rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+  color:#1f1f1f;
+}
+
+.logo {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.navbar{
+    width:fit-content;
+    justify-content: space-around;
+
+}
+.navbar a {
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.banner img{
+    margin-top:100px;
+}
+.navbar a:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  color: var(--green);
+  background-color: var(--btn-green);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.header .hamburger img {
+  width: 3rem;
+}
+
+.header .hamburger {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .navbar a {
+    padding: 0.5rem;
+  }
+
+  .navbar a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .navbar {
+    position: fixed;
+    /* top: 9rem; */
+    left: 0;
+    right: 0;
+    width: 90%;
+    padding: 2.5rem;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    top: -100%;
+  }
+
+ 
+
+
+  .header .hamburger {
+    display: block;
+  }
+
+  .navbar.show {
+    top: 9rem;
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+/* Header styles */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: white;
+	height: 4rem;
+}
+
+.logo {
+	font-size: 2rem;
+}
+
+nav {
+	width: 30rem;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li a {
+	font-size: 1.2rem;
+	padding: 1rem;
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	background-color: #0dac30;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.reachUs-button {
+	padding: 1rem;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.reachUs-button:hover {
+	background-color: #1ac840;
+}
+
+/* banner section styles */
+.banner {
+	text-align: center;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+
+.banner img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Contact form styles */
+.contact-form {
+	padding: 40px 0;
+	margin: 0 10px;
+}
+
+.form-container {
+    width:500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-container label {
+	display: block;
+	font-weight: bold;
+}
+
+.form-container input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	resize: vertical;
+}
+
+.submit-button {
+	padding: 10px 20px;
+	background-color: #0dac30;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+/* Contact info styles */
+.contact-info {
+	text-align: center;
+	padding: 50px 0;
+	background-color: #f7f7f7;
+}
+
+.contact-info h2 {
+	margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+	padding: 20px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+
+/* Hamburger styles */
+.hamburger {
+	display: none;
+	color: rgb(0, 0, 0);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+	}
+
+	nav {
+		width: auto;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		margin-bottom: 10px;
+	}
+
+	nav ul li a {
+		padding: 0.5rem;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+}
+
+.footer .top {
+    background-color: var(--footer-green);
+    padding: 10rem 9%;
+    display: grid;
+    padding:20px;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .footer .top .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  
+  .footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: var(--deep-yellow);
+  }
+  
+  .footer .top .content p {
+    color: var(--grey);
+    margin-top: 2rem;
+    width: 90%;
+  }
+  
+  .footer .top .link h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .top .link a {
+    display: inline-block;
+    color: var(--grey);
+    margin-bottom: 1rem;
+  }
+  
+  .footer .top .link span {
+    color: var(--grey);
+  }
+  
+  .footer .top .link a {
+    display: block;
+  }
+  
+  .footer .top .link div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .top .link div img {
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 996px) {
+    .footer .top {
+      padding: 5rem 9%;
+      grid-template-columns: 1fr;
+    }
+  
+    .footer .top .content {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-container{
+        width:300px;
+    }
+    .footer {
+        display:none;
+    }
+  }
+  
