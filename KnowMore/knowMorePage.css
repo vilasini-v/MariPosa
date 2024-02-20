@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --Ubuntu: 'Ubuntu', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+    --green: #8acbb8;
+    --white:#fff;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Ubuntu);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    font-family: var(--Ubuntu);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container1, .container2{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+    font-size: 16px;
+    font-family: var(--Ubuntu);
+
+}
+
+.container1{
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* header */
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-bg.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: #eee;
+    padding: 1.2rem;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);  
+}
+.navbar-brand{
+    color:var(--exDark);
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Ubuntu);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    font-family: var(--Ubuntu);
+    color:var(--exDark);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.4;
+}
+.green {
+    color: var(--green);
+  }
+
+.desc {
+    width: 33.33%;
+    padding: 5px;
+    display: inline-block;
+    padding: 50px;
+    font-family: var(--Ubuntu);
+}
+
+.desc img {
+    border-radius: 60%;
+    border: #2b2b2b;
+}
+
+/* about */
+    .about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}   
